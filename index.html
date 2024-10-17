@@ -1,5 +1,84 @@
-
-  <body>
-    <h1>My homepage</h1>
-      <h4>My link-in-bio</h4>
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>link in bio</title>
+    <style>
+        * {
+            border: 1px dashed red; /* This will help visualize layout borders */
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: grey; /* Background stretches to window edges */
+        }
+        .main-container {
+            width: 40%; /* % of the screen width */
+            height: 90vh; /* % of the screen height to make it longer down */
+            background-color: whitesmoke;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .image-row, .name-row, .social-icons-row, .links-row {
+            margin: 20px 0;
+        }
+        .image-row {
+            text-align: center; /* Center avatar */
+        }
+        .image-row img {
+            max-width: 100px;
+            border-radius: 50%;
+        }
+        .social-icons-row {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center icons vertically */
+        }
+        .social-icons-row a {
+            margin: 15px 0; /* Space between each icon link */
+        }
+        .links-row{
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+        .name-row {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="image-row">
+            <!-- Avatar image goes here -->
+            <img src="images/unsplash.jpg" alt="Person's Avatar">
+        </div>
+        <div class="name-row">
+            <!-- Person's name goes here -->
+            <h1>John Doe</h1>
+        </div>
+        <div class="social-icons-row">
+            <!-- Social media links go here, vertically centered -->
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+            <a href="#">Gitlab</a>
+        </div>
+        <div class="links-row">
+            <!-- Other links go here -->
+            <a href="#">Portfolio</a> | 
+            <a href="#">Blog</a> | 
+            <a href="#">Contact</a>
+            <a href="#">Email</a>
+        </div>
+    </div>
 </body>
+</html>
