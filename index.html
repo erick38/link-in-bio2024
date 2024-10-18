@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- mobile devices -->
     <meta property="og:image" content="images/me.jpg">
     <title>link in bio</title>
     <style>
@@ -8,6 +9,21 @@
             border: 1px dashed black; This will help visualize layout borders 
         }
             */
+            @media (max-width: 768px) {
+            .main-container {
+                width: 90%; /* Adjust the container width for mobile screens */
+            }
+
+            .links-row a {
+                font-size: 14px; /* Adjust font size for mobile */
+                padding: 12px; /* Adjust padding for mobile */
+            }
+
+            .social-icons-row img {
+                width: 18px; /* Slightly reduce icon size for mobile */
+                height: 18px;
+            }
+        }
         body {
             margin: 0;
             padding: 0;
