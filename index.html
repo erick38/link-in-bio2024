@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
+    <meta property="og:image" content="images/unsplash.jpg">
     <title>link in bio</title>
     <style>
-        * {
-            border: 1px dashed red; /* This will help visualize layout borders */
+       /*  * {
+            border: 1px dashed black; This will help visualize layout borders 
         }
+            */
         body {
             margin: 0;
             padding: 0;
@@ -17,7 +19,7 @@
         }
         .main-container {
             width: 40%; /* % of the screen width */
-            height: 90vh; /* % of the screen height to make it longer down */
+            height: 93vh; /* % of the screen height to make it longer down */
             background-color: whitesmoke;
             padding: 20px;
             display: flex;
@@ -36,17 +38,32 @@
         }
         .social-icons-row {
             display: flex;
-            flex-direction: column;
-            align-items: center; /* Center icons vertically */
-        }
-        .social-icons-row a {
-            margin: 15px 0; /* Space between each icon link */
-        }
-        .links-row{
-            display: flex;
             justify-content: center;
-            gap: 25px;
+            gap: 25px; /* Space between social media links */
         }
+        .links-row {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center the links */
+            gap: 15px; /* Space between each portfolio link */
+        }
+        .links-row a {
+        display: block; /* Make each link a block element */
+        width: 85%; /* Full width of the parent */
+        padding: 15px; /* Add padding for height and space around text */
+        background-color: grey; 
+        color: white; /* White text */
+        text-align: center; /* Center text */
+        text-decoration: none; /* Remove underline */
+        border-radius: 30px; /* Rounded corners */
+        margin-bottom: 1px; /* Space between buttons */
+        font-size: 18px; /* Adjust font size */
+        transition: background-color 0.3s ease; /* Smooth hover effect */
+    }
+
+    .links-row a:hover {
+        background-color: black;
+    }
         .name-row {
             display: flex;
             justify-content: center;
@@ -61,23 +78,31 @@
         </div>
         <div class="name-row">
             <!-- Person's name goes here -->
-            <h1>John Doe</h1>
+            <h1>Erick I Bedolla</h1>
         </div>
         <div class="social-icons-row">
-            <!-- Social media links go here, vertically centered -->
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">Twitter</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">GitHub</a>
-            <a href="#">Gitlab</a>
+            <!-- Social media links go here, horizontally aligned with icons -->
+            <a href="https://x.com/">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" alt="Twitter Icon" style="width: 20px; height: 20px; margin-right: 65px;">
+            </a>
+            <a href="https://www.linkedin.com/in/israel-bedolla-500500205/">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn Icon" style="width: 20px; height: 20px; margin-right: 65px;">
+            </a>
+            <a href="https://github.com/erick38">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub Icon" style="width: 20px; height: 20px; margin-right: 65px;">
+            </a>
+            <a href="https://gitlab.com/Devbedolla">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" alt="GitLab Icon" style="width: 20px; height: 20px; margin-right: 65px">
+            </a>
         </div>
+        
+        
         <div class="links-row">
-            <!-- Other links go here -->
-            <a href="#">Portfolio</a> | 
-            <a href="#">Blog</a> | 
-            <a href="#">Contact</a>
-            <a href="#">Email</a>
+            <!-- Portfolio, Blog, Contact, Email links rendered vertically -->
+            <a href="portfolio.html">Portfolio</a>
+            <a href="/hello.html">Blog</a>
+            <a href="tel:+17085102242">Contact</a>
+            <a href="mailto:dev3bedolla8@gmail.com">Email</a>
         </div>
     </div>
 </body>
