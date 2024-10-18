@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
-    <meta property="og:image" content="images/unsplash.jpg">
+    <meta property="og:image" content="images/me.jpg">
     <title>link in bio</title>
     <style>
        /*  * {
@@ -33,9 +33,12 @@
             text-align: center; /* Center avatar */
         }
         .image-row img {
-            max-width: 100px;
-            border-radius: 50%;
-        }
+    width: 100px; /* Set a fixed width */
+    height: 100px; /* Set a fixed height to match the width */
+    border-radius: 50%; /* This will make it a perfect circle */
+    object-fit: cover; /* Ensures the image doesn't get distorted */
+}
+
         .social-icons-row {
             display: flex;
             justify-content: center;
@@ -74,7 +77,7 @@
     <div class="main-container">
         <div class="image-row">
             <!-- Avatar image goes here -->
-            <img src="images/unsplash.jpg" alt="Person's Avatar">
+            <img src="images/me.jpg" alt="Person's Avatar">
         </div>
         <div class="name-row">
             <!-- Person's name goes here -->
